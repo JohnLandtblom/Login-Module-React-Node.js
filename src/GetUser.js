@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Axios from "axios";
 import UserLogout from "./UserLogout";
+import "./GetUser.css";
 
 const GetUser = () => {
   const [data, setData] = useState(null);
@@ -16,14 +17,17 @@ const GetUser = () => {
   };
 
   return (
-    <div>
-      <button onClick={getUser}>Get User</button>
+    <div className="userPage">
+      <div className="userPageBtns">
+        <button onClick={getUser}>Get User</button>
+        <UserLogout></UserLogout>
+      </div>
+
       {data ? (
-        <h1>
+        <h1 className="displayName">
           Welcome Back {data.firstname} {data.lastname}
         </h1>
       ) : null}
-      <UserLogout></UserLogout>
     </div>
   );
 };

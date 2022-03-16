@@ -1,0 +1,16 @@
+.userPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userPageBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.displayName {
+  color: rgb(21, 21, 105);
+  font-family: cursive;
+}
