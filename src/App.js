@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import RegisterForm from "./RegisterForm";
+import LogInForm from "./LoginForm";
+import GetUser from "./GetUser";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [page, setPage] = useState("LogInForm");
+
+  const renderApp = () => {
+    switch (page) {
+      case "LogInForm":
+        return <LogInForm setPage={(page) => setPage(page)}></LogInForm>;
+      case "RegisterForm":
+        return <RegisterForm setPage={(page) => setPage(page)}></RegisterForm>;
+      case "GetUser":
+        return <GetUser setPage={(page) => setPage(page)}></GetUser>;
+    }
+  };
+
+  return renderApp();
 }
 
 export default App;

@@ -1,0 +1,119 @@
+body {
+  background: #abcdef;
+  font-family: Assistant, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.headLineFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.RegisterFormContainer {
+  color: white;
+  background: #136a8a;
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: linear-gradient(to right, #267871, #136a8a);
+  margin: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3),
+    0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.firstName::placeholder,
+.lastName::placeholder,
+.email::placeholder,
+.pw::placeholder,
+.repeatPw::placeholder {
+  color: #d3d3d3;
+}
+.fnameReq {
+  margin-top: 5vh;
+  margin-right: 1vh;
+}
+
+.lnameReq {
+  margin-top: 5vh;
+  margin-left: 1vh;
+}
+.firstAndLastName {
+  display: flex;
+}
+
+.headLine {
+  font-size: 4.2em;
+}
+
+input {
+  margin-top: 2vh;
+  border-radius: 4px;
+  box-shadow: 0px 2px 0px 0px white;
+  color: white;
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+  height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+p {
+  font-size: x-small;
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vh;
+}
+
+button,
+a {
+  margin-top: 3vh;
+}
+
+.firstName,
+.lastName {
+  width: 200px;
+}
+
+.firstName {
+  margin-right: 3vh;
+}
+
+.emailAndPw,
+.pwAndLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.repeatPw {
+  margin-top: 1px;
+}
+
+button {
+  margin-right: 20vh;
+  background: none;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 3px;
+  padding: 5px 2em;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: white;
+  color: dimgray;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  float: right;
+  margin-top: 4vh;
+}
