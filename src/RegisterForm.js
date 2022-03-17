@@ -32,7 +32,7 @@ const RegisterForm = ({ setPage }) => {
         setPage("LogInForm");
       })
       .catch((e) => {
-        console(e);
+        console.log(e);
       });
   };
 
